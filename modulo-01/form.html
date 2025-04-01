@@ -16,15 +16,9 @@
     <form action="cad.php" method="get">
         <fieldset>
             <legend>Login</legend>
-            <label for="name">
-                Nome: <input type="text" name="name" id="name" autocomplete="name" placeholder="Digite seu nome" required autofocus maxlength="255">
-            </label>
-            <label for="password">
-                Senha: <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
-            </label>
-            <label for="email">
-                E-mail: <input type="email" name="email" id="email" required autocomplete="email">
-            </label>
+            <label for="name">Nome: <input type="text" name="name" id="name" autocomplete="name" placeholder="Digite seu nome" required autofocus maxlength="255"></label>
+            <label for="password">Senha: <input type="password" name="password" id="password" placeholder="Digite sua senha" required></label>
+            <label for="email">E-mail: <input type="email" name="email" id="email" required autocomplete="email"></label>
             Time:
             <input type="radio" name="time" value="vasco" checked>Vasco
             <input type="radio" name="time" value="botafogo">Botafogo
@@ -36,12 +30,9 @@
             <input type="checkbox" name="color" value="blue">Azul
             <input type="checkbox" name="color" value="black">Petro
             <br>
-
             <label for="qtda">Quantidade: <input type="number" name="qtda" min="0" max="100" value="0" step="5"></label>
-            
-            <label for="desc">
-                Descrição: <input type="text" id="desc" disabled>
-            </label>
+            <label for="qtda-2">Porcentagem: <input type="range" name="qtda-2" min="0" value="30" max="100" step="10"></label>
+            <label for="desc">Descrição: <input type="text" id="desc" disabled></label>
             <input type="submit" name="btn-submit" value="Enviar">
         </fieldset>
     </form>
