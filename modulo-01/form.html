@@ -6,9 +6,8 @@
     <title>HTML5 - Nodestudio</title>
     <link rel="shortcut icon" href="./image/logo-html.svg" type="image/svg">
     <style type="text/css">
-        label {
+        input {
             margin: 10px 0;
-            display: block;
         }
     </style>
 </head>
@@ -16,23 +15,38 @@
     <form action="cad.php" method="get">
         <fieldset>
             <legend>Login</legend>
-            <label for="name">Nome: <input type="text" name="name" id="name" autocomplete="name" placeholder="Digite seu nome" required autofocus maxlength="255"></label>
-            <label for="password">Senha: <input type="password" name="password" id="password" placeholder="Digite sua senha" required></label>
-            <label for="email">E-mail: <input type="email" name="email" id="email" required autocomplete="email"></label>
-            Time:
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" autocomplete="name" placeholder="Digite seu nome" required autofocus maxlength="255">
+            <br>
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required autocomplete="email">
+            <br>
+            <span>Time:</span>
             <input type="radio" name="time" value="vasco" checked>Vasco
             <input type="radio" name="time" value="botafogo">Botafogo
             <input type="radio" name="time" value="fluminense">Fluminense
             <input type="radio" name="time" value="flamengo">Flamengo
             <br>
-            Cores:
+            <span>Cores:</span>
             <input type="checkbox" name="color" value="green" checked>Verde
             <input type="checkbox" name="color" value="blue">Azul
             <input type="checkbox" name="color" value="black">Petro
             <br>
-            <label for="qtda">Quantidade: <input type="number" name="qtda" min="0" max="100" value="0" step="5"></label>
-            <label for="qtda-2">Porcentagem: <input type="range" name="qtda-2" min="0" value="30" max="100" step="10"></label>
-            <label for="desc">Descrição: <input type="text" id="desc" disabled></label>
+            <label for="qtda">Quantidade:</label>
+            <input type="number" id="qtda" min="0" max="100" value="0" step="5">
+            <br>
+            <label for="qtda-2">Porcentagem:</label>
+            <input type="range" id="qtda-2" min="0" value="30" max="100" step="10">
+            <br>
+            <label for="color">Cor:</label>
+            <input type="color" id="color">
+            <br>
+            <label for="desc">Descrição:</label>
+            <input type="text" id="desc" disabled>
+            <br>
             <input type="submit" name="btn-submit" value="Enviar">
         </fieldset>
     </form>
