@@ -13,32 +13,60 @@
         th, td {
             padding: 5px;
         }
+
+        .name {
+            background-color: red;
+        }
+
+        .email {
+            background-color: green;
+        }
+
+        .tel {
+            background-color: blue;
+        }
+
+        .cargo {
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
     <h1>Tabelas</h1>
     <table>
         <caption>Cadastro de clientes</caption>
-        <tr>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Telefone</th>
-            <th>Cargo</th>
-        </tr>
-        <tr>
-            <td>Rodrigo</td>
-            <td>rodrigo@mail.com</td>
-            <td>1111-2222</td>
-            <td rowspan="2">Desenvolvedor Web</td>
-        </tr>
-        <tr>
-            <td>Rolnado</td>
-            <td>rolnado@mail.com</td>
-            <td>3333-4444</td>
-        </tr>
-        <tr>
-            <td colspan="4">Total: 2</td>
-        </tr>
+        <colgroup>
+            <col class="name">
+            <col class="email">
+            <col class="tel">
+            <col class="cargo">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Cargo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rodrigo</td>
+                <td>rodrigo@mail.com</td>
+                <td>1111-2222</td>
+                <td rowspan="2">Desenvolvedor Web</td>
+            </tr>
+            <tr>
+                <td>Rolnado</td>
+                <td>rolnado@mail.com</td>
+                <td>3333-4444</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total: 2</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
