@@ -56,7 +56,7 @@
             <input type="search" name="search" id="search">
             <br>
             <label for="tel">Telefone</label>
-            <input type="tel" name="tel" id="tel">
+            <input type="tel" name="tel" id="tel" autocomplete="tel">
             <br>
             <label for="date">Data:</label>
             <input type="date" name="date" id="date" min="1900-01-01" max="2020-12-31">
@@ -75,6 +75,11 @@
             <br>
             <label for="desc">Descrição:</label>
             <input type="text" id="desc" disabled>
+            <br>
+            <label for="msm">Mensagem:</label>
+            <textarea name="msm" id="msm" rows="5" cols="30"></textarea>
+            <br>
+            <button type="button">Botão</button>
             <br>
             <input type="submit" name="btn-submit" value="Enviar">
         </fieldset>
