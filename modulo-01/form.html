@@ -6,8 +6,8 @@
     <title>HTML5 - Nodestudio</title>
     <link rel="shortcut icon" href="./image/logo-html.svg" type="image/svg">
     <style type="text/css">
-        input {
-            margin: 10px 0;
+        input, textarea, button, select {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -80,6 +80,17 @@
             <textarea name="msm" id="msm" rows="5" cols="30"></textarea>
             <br>
             <button type="button">Botão</button>
+            <br>
+            <select name="vehicle" id="vehicle">
+                <optgroup label="Carros">
+                    <option value="camaro" selected>Camaro</option>
+                    <option value="hilux">Hilux</option>
+                </optgroup>
+                <optgroup label="Motos">
+                    <option value="pop100">Pop 100</option>
+                    <option value="zig50">Zig 50</option>
+                </optgroup>
+            </select>
             <br>
             <input type="submit" name="btn-submit" value="Enviar">
         </fieldset>
